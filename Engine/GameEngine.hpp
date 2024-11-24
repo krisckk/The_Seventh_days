@@ -4,6 +4,7 @@
 #include <allegro5/allegro_audio.h>
 #include <string>
 #include <unordered_map>
+#include <memory>
 
 #include "Point.hpp"
 
