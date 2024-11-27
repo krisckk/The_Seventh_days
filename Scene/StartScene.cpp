@@ -43,7 +43,7 @@ void StartScene::NewGameOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("stage1");
 }
 void StartScene::SettingsOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("settings");
+    Engine::GameEngine::GetInstance().ChangeScene("Settings");
 }
 void StartScene::AchievementOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("achievement");

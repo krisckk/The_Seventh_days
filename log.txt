@@ -19,20 +19,281 @@
 [INFO] Loaded Resource<image>: Resource/images/StartScene/AchievementButtonHovered.png
 [INFO] Game initialized
 [INFO] Game start event loop
+[INFO] Loaded Resource<image>: Resource/images/SettingsBackground.png scaled to 1600x900
+[INFO] Loaded Resource<font>: Resource/fonts/JetBrainsMono.ttf with size 56
+[INFO] Loaded Resource<image>: Resource/images/stage-select/slider.png
+[INFO] Loaded Resource<image>: Resource/images/stage-select/slider-blue.png
+[INFO] Loaded Resource<image>: Resource/images/stage-select/bar.png scaled to 190x4
+[INFO] Loaded Resource<image>: Resource/images/stage-select/end.png
+[INFO] Loaded Resource<font>: Resource/fonts/NimbusSansCHS.ttf with size 28
+[INFO] Loaded Resource<font>: Resource/fonts/JetBrainsMono.ttf with size 28
+[INFO] Loaded Resource<image>: Resource/images/BackButton.png scaled to 300x80
+[INFO] Loaded Resource<image>: Resource/images/BackButton.png
+[INFO] Loaded Resource<image>: Resource/images/BackButtonHovered.png
+[INFO] Changed to Settings scene
+[INFO] Loaded Resource<audio>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Created<sample_instance>: Resource/audios/laser.wav
+[INFO] Changed to StartScene scene
+[INFO] Changed to Settings scene
+[INFO] Changed to StartScene scene
 [INFO] Game Terminating...
 [INFO] Game terminated
 [INFO] Game end
+[INFO] Destroyed Resource<image>: BackButton.png?300x80
+[INFO] Destroyed Resource<image>: stage-select/slider-blue.png
 [INFO] Destroyed Resource<image>: StartScene/AchievementButton.png
 [INFO] Destroyed Resource<image>: StartScene/AchievementButton.png?360x80
 [INFO] Destroyed Resource<image>: StartScene/SettingsButtonHovered.png
 [INFO] Destroyed Resource<image>: StartScene/SettingsButton.png?360x80
 [INFO] Destroyed Resource<image>: StartScene/ContinueButtonHovered.png
+[INFO] Destroyed Resource<image>: stage-select/end.png
 [INFO] Destroyed Resource<image>: StartScene/ContinueButton.png?360x80
+[INFO] Destroyed Resource<image>: stage-select/bar.png?190x4
 [INFO] Destroyed Resource<image>: StartScene/SettingsButton.png
 [INFO] Destroyed Resource<image>: icon.png
+[INFO] Destroyed Resource<image>: stage-select/slider.png
+[INFO] Destroyed Resource<image>: SettingsBackground.png?1600x900
 [INFO] Destroyed Resource<image>: StartScene/NewGameButton.png
 [INFO] Destroyed Resource<image>: StartScene/MenuBackground.png?1600x900
 [INFO] Destroyed Resource<image>: StartScene/AchievementButtonHovered.png
 [INFO] Destroyed Resource<image>: StartScene/NewGameButtonHovered.png
+[INFO] Destroyed Resource<image>: BackButtonHovered.png
 [INFO] Destroyed Resource<image>: StartScene/ContinueButton.png
+[INFO] Destroyed Resource<image>: BackButton.png
 [INFO] Destroyed Resource<image>: StartScene/NewGameButton.png?360x80
+[INFO] Destroyed Resource<font>: JetBrainsMono.ttf?28
+[INFO] Destroyed Resource<font>: NimbusSansCHS.ttf?28
+[INFO] Destroyed Resource<font>: JetBrainsMono.ttf?56
+[INFO] Destroyed<sample_instance>: laser.wav
+[INFO] Destroyed Resource<audio>: laser.wav

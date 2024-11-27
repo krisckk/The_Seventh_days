@@ -5,11 +5,13 @@
 #include "Engine/AudioHelper.hpp"
 #include "Engine/LOG.hpp"
 #include "Scene/StartScene.hpp"
+#include "Scene/Settings.hpp"
 int main(int argc, char **argv) {
 	Engine::LOG::SetConfig(true);
 	Engine::GameEngine& game = Engine::GameEngine::GetInstance();
-	game.AddNewScene("start", new StartScene());
+	game.AddNewScene("StartScene", new StartScene());
+	game.AddNewScene("Settings", new Settings());
 
-	game.Start("start", 120, 1600, 900);
+	game.Start("StartScene", 120, 1600, 900);
 	return 0;
 }
