@@ -15,6 +15,10 @@ class StartScene final : public Engine::IScene {
         explicit StartScene() = default;
         void Initialize() override;
         void Terminate() override;
+        void SettingsOnClick(int stage);
+        void NewGameOnClick(int stage);
+        void AchievementOnClick(int stage);
+        void ContinueOnClick(int stage);
         std::string GetName() const override { return "StartScene"; }
 };
 
