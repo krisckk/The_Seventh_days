@@ -10,7 +10,6 @@
 #include "Engine/IScene.hpp"
 
 class StartScene final : public Engine::IScene {
-    private:
     public:
         explicit StartScene() = default;
         void Initialize() override;

@@ -12,7 +12,7 @@
 #include "UI/Component/Label.hpp"
 #include "UI/Component/Slider.hpp"
 #include "Scene/StartScene.hpp"
-
+static ALLEGRO_SAMPLE_ID BGM;
 void StartScene::Initialize() {
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
@@ -35,12 +35,14 @@ void StartScene::Initialize() {
     btn = new Engine::ImageButton("StartScene/AchievementButton.png", "StartScene/AchievementButtonHovered.png", 122, 700, 360, 80, 0, 0);
     btn -> SetOnClickCallback(std::bind(&StartScene::AchievementOnClick, this, 1));
     AddNewControlObject(btn);
+    BGM = AudioHelper::PlayBGM("BeginningReadyFotlt.ogg");
 }
 void StartScene::Terminate() {
+    AudioHelper::StopBGM(BGM);
     IScene::Terminate();
 }
 void StartScene::NewGameOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("stage1");
+    Engine::GameEngine::GetInstance().ChangeScene("FirstScene");
 }
 void StartScene::SettingsOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("Settings");

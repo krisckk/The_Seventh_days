@@ -1,7 +1,7 @@
 #include <allegro5/allegro_audio.h>
 #include <functional>
 #include <memory>
-
+#include <thread>
 #include "Engine/AudioHelper.hpp"
 #include "Engine/GameEngine.hpp"
 #include "UI/Component/ImageButton.hpp"
@@ -32,18 +32,20 @@ void Settings::Initialize() {
     btn = new Engine::ImageButton("BackButton.png", "BackButtonHovered.png", 650, 600, 300, 80, 0, 0);
     btn -> SetOnClickCallback(std::bind(&Settings::BackOnClick, this, 1));
     AddNewControlObject(btn);
+    BGMInstance = AudioHelper::PlaySample("BeginningReadyFotlt.ogg", true, AudioHelper::BGMVolume);
 }
 void Settings::Terminate() {
     IScene::Terminate();
-    AudioHelper::StopSample(sfxInstance);
+    AudioHelper::StopSample(BGMInstance);
 }
 void Settings::BackOnClick(int Stage){
     Engine::GameEngine::GetInstance().ChangeScene("StartScene");
 }
 void Settings::BGMSliderOnValueChanged(float value){
     AudioHelper::BGMVolume = value;
+    AudioHelper::ChangeSampleVolume(BGMInstance, AudioHelper::BGMVolume);
 }
 void Settings::SFXSliderOnValueChanged(float value){
     AudioHelper::SFXVolume = value;
-    sfxInstance = AudioHelper::PlaySample("laser.wav", false, AudioHelper::SFXVolume);
+    AudioHelper::PlaySample("laser.wav", false, AudioHelper::SFXVolume);
 }

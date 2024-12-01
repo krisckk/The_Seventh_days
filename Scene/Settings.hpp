@@ -6,10 +6,8 @@
 #include "Engine/IScene.hpp"
 
 class Settings final : public Engine::IScene {
-    private:
-        std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE> sfxInstance;
-        //std::shared_ptr<ALLEGRO_SAMPLE> backgroundBGM;
     public:
+        std::shared_ptr<ALLEGRO_SAMPLE_INSTANCE> BGMInstance;
         explicit Settings() = default;
         void Initialize() override;
         void Terminate() override;

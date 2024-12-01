@@ -16,7 +16,7 @@ endif
 CXXFLAGS = -std=c++14 -I. -IEngine -IResource
 
 # Source files
-SOURCES = $(wildcard Engine/*.cpp) $(wildcard UI/Component/*.cpp) $(wildcard Scene/*.cpp) main.cpp
+SOURCES = $(wildcard Engine/*.cpp) $(wildcard UI/Component/*.cpp) $(wildcard Scene/*.cpp) $(wildcard Scene/Act1/Glyswen/*.cpp) main.cpp
 
 # Object files
 OBJECTS = $(SOURCES:.cpp=.o)

@@ -31,8 +31,7 @@ namespace Engine {
 		IScene* activeScene{};
 		// Allegro5 display for window creation.
 		ALLEGRO_DISPLAY* display{};
-		// Allegro5 event queue.
-		ALLEGRO_EVENT_QUEUE* event_queue{};
+		
 		// Allegro5 timer to inject update & draw event into the event queue.
 		ALLEGRO_TIMER* update_timer{};
 		// The window's title text.
@@ -90,6 +89,8 @@ namespace Engine {
 		/// Copy assignment operator is deleted, no copy assignment allowed.
 		/// </summary>
 		GameEngine& operator=(GameEngine const&) = delete;
+		// Allegro5 event queue.
+		ALLEGRO_EVENT_QUEUE* event_queue{};
 		/// <summary>
 		/// Start the game loop until exit, scenes should be added before starting.
 		/// </summary>
