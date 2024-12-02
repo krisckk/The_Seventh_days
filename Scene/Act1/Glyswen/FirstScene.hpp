@@ -5,6 +5,8 @@
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_video.h>
 #include <Engine/IScene.hpp>
+#include "Character/MainCharacter.hpp"
+extern MainCharacter* MC;
 namespace Engine{
     class Group;
     class Image;

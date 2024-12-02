@@ -20,6 +20,19 @@
 [INFO] Loaded Resource<audio>: Resource/audios/BeginningReadyFotlt.ogg
 [INFO] Game initialized
 [INFO] Game start event loop
+[INFO] stopped audio (bgm)
+[INFO] First Scene created
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstSceneGIF.jpg
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene1narration.jpg
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene2narration.jpg
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene3narration.jpg
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene4narration.jpg
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene5narration.jpg
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene6narration.jpg
+[INFO] Loaded Resource<audio>: Resource/audios/MedievalMusic.ogg
+[INFO] First Scene initialized
+[INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
+[INFO] Changed to FirstScene scene
 [INFO] Game Terminating...
 [INFO] stopped audio (bgm)
 [INFO] Game terminated

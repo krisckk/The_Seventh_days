@@ -8,9 +8,11 @@
 #include <Engine/Sprite.hpp>
 #include <Engine/LOG.hpp>
 #include <UI/Component/Label.hpp>
+#include "Character/MainCharacter.hpp"
 #include "Shared/Global.hpp"
 #include "FirstScene.hpp"
 static ALLEGRO_SAMPLE_ID MedievalBGM;
+MainCharacter* MC;
 void FirstScene::Initialize() {
     Engine::LOG(Engine::INFO) << "First Scene created";
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
@@ -26,6 +28,12 @@ void FirstScene::Initialize() {
     FirstScene6narration = Engine::Resources::GetInstance().GetBitmap("Act1/Glyswen/FirstScene6narration.jpg");
     MedievalBGM = AudioHelper::PlayBGM("MedievalMusic.ogg");
     Engine::LOG(Engine::INFO) << "First Scene initialized";
+    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(800, 300), 200);
+    if(!MC){
+        Engine::LOG(Engine::ERROR) << "Failed to create Main Character";
+        return;
+    }
+    AddNewObject(MC);
 }
 void FirstScene::Draw() const{
     IScene::Draw();
@@ -56,8 +64,9 @@ void FirstScene::Draw() const{
     }
 }
 void FirstScene::Terminate() {
-    IScene::Terminate();
+    MC = nullptr;
     AudioHelper::StopBGM(MedievalBGM);
+    IScene::Terminate();
 }
 void FirstScene::Update(float deltaTime) {
     IScene::Update(deltaTime);
@@ -68,8 +77,19 @@ void FirstScene::OnKeyDown(int keyCode){
         case ALLEGRO_KEY_C:
             showTextBox++;
             break;
+        case ALLEGRO_KEY_A:
+            if(showTextBox > 6) MC -> MoveLeft(1.0f / 120.0f); // Assuming 120 fps
+            break;
+        case ALLEGRO_KEY_D:
+            if(showTextBox > 6) MC -> MoveRight(1.0f / 120.0f); // Assuming 120 fps
+            break;
     }
 }
 void FirstScene::OnKeyUp(int keyCode){
-
+    switch(keyCode){
+        case ALLEGRO_KEY_A:
+        case ALLEGRO_KEY_D:
+            MC -> Stop();
+            break;
+    }
 }
