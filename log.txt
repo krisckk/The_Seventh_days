@@ -20,14 +20,8 @@
 [INFO] Loaded Resource<audio>: Resource/audios/BeginningReadyFotlt.ogg
 [INFO] Game initialized
 [INFO] Game start event loop
-[INFO] stopped audio (bgm)
-[INFO] First Scene created
-[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstSceneGIF.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene1narration.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene2narration.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene3narration.jpg
-[INFO] Changed to FirstScene scene
 [INFO] Game Terminating...
+[INFO] stopped audio (bgm)
 [INFO] Game terminated
 [INFO] Game end
 [INFO] Game Initializing...
@@ -35,4 +29,3 @@
 [INFO] There are total 3 supported mouse buttons
 [INFO] Allegro5 initialized
 [INFO] Game begin
-[INFO] Game initialized

@@ -13,22 +13,21 @@ namespace Engine{
 }
 class FirstScene final : public Engine::IScene {
     private:
-        bool showTextBox1 = true;
-        bool showTextBox2 = false;
-        bool showTextBox3 = false;
-        bool showTextBox4 = false;
+        int showTextBox = 0;
         float textBoxTimer = 0.0f;
         std::shared_ptr <ALLEGRO_BITMAP> FirstSceneGIF;
         std::shared_ptr <ALLEGRO_BITMAP> FirstScene1narration;
         std::shared_ptr <ALLEGRO_BITMAP> FirstScene2narration;
         std::shared_ptr <ALLEGRO_BITMAP> FirstScene3narration;
+        std::shared_ptr <ALLEGRO_BITMAP> FirstScene4narration;
+        std::shared_ptr <ALLEGRO_BITMAP> FirstScene5narration;
+        std::shared_ptr <ALLEGRO_BITMAP> FirstScene6narration;
     public:
         FirstScene() = default;
         void Initialize() override;
         void Terminate() override;
         void Draw() const override;
         void Update(float deltaTime) override;
-        void UpdateTextBox(float deltaTime);
         void OnKeyDown(int keyCode) override;
         void OnKeyUp(int keyCode) override;
         std::string GetName() const override { return "FirstScene"; }
