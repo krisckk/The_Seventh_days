@@ -14,6 +14,8 @@ MainCharacter::MainCharacter(std::string img, Engine::Point position, float _spe
     idleAnimation({al_load_bitmap("Resource/images/Character/MainCharacter/MCidle.png")}, 0.2f),
     LeftwalkAnimation({al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkLeftL.png"), al_load_bitmap("Resource/images/Character/MCwalkLeftR.png")}, 0.2f),
     RightwalkAnimation({al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkRightL.png"), al_load_bitmap("Resource/images/Character/MCwalkRightR.png")}, 0.2f),
+    UpwalkAnimation({al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkUpL.png"), al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkUpR.png")}, 0.2f),
+    DownwalkAnimation({al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkDownL.png"), al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkDownR.png")}, 0.2f),
     currentAnimation(&idleAnimation) {
         ALLEGRO_BITMAP* idleFrame = al_load_bitmap("Resource/images/Character/MainCharacter/MCidle.png");
         if(!idleFrame){
@@ -24,7 +26,11 @@ MainCharacter::MainCharacter(std::string img, Engine::Point position, float _spe
         ALLEGRO_BITMAP* LeftwalkFrameR = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkLeftR.png");
         ALLEGRO_BITMAP* RightwalkFrameL = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkRightL.png");
         ALLEGRO_BITMAP* RightwalkFrameR = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkRightR.png");
-        if(!LeftwalkFrameL || !LeftwalkFrameR || !RightwalkFrameL || !RightwalkFrameR){
+        ALLEGRO_BITMAP* UpwalkFrameL = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkUpL.png");
+        ALLEGRO_BITMAP* UpwalkFrameR = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkUpR.png");
+        ALLEGRO_BITMAP* DownwalkFrameL = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkDownL.png");
+        ALLEGRO_BITMAP* DownwalkFrameR = al_load_bitmap("Resource/images/Character/MainCharacter/MCwalkDownR.png");
+        if(!LeftwalkFrameL || !LeftwalkFrameR || !RightwalkFrameL || !RightwalkFrameR || !UpwalkFrameL || !UpwalkFrameR || !DownwalkFrameL || !DownwalkFrameR){
             Engine::LOG(Engine::ERROR) << "Failed to load walk animation frames";
             return;
         }
@@ -32,6 +38,8 @@ MainCharacter::MainCharacter(std::string img, Engine::Point position, float _spe
         idleAnimation = Animation({idleFrame}, 0.2f);
         LeftwalkAnimation = Animation({LeftwalkFrameL, LeftwalkFrameR}, 0.2f);
         RightwalkAnimation = Animation({RightwalkFrameL, RightwalkFrameR}, 0.2f);
+        UpwalkAnimation = Animation({UpwalkFrameL, UpwalkFrameR}, 0.2f);
+        DownwalkAnimation = Animation({DownwalkFrameL, DownwalkFrameR}, 0.2f);
         currentAnimation = &idleAnimation;
         bmp = std::shared_ptr<ALLEGRO_BITMAP>(al_load_bitmap(img.c_str()), al_destroy_bitmap);
         al_draw_filled_rectangle(200, 800, 1400, 880, al_map_rgb(255, 255, 255));
@@ -63,6 +71,20 @@ void MainCharacter::MoveRight(float deltaTime) {
         Velocity.x = speed;
         Rotation = 0;
         currentAnimation = &RightwalkAnimation;
+    }
+}
+void MainCharacter::MoveUp(float deltaTime) {
+    if(Position.y > 0){
+        Velocity.y = -speed;
+        Rotation = 90;
+        currentAnimation = &UpwalkAnimation;
+    }
+}
+void MainCharacter::MoveDown(float deltaTime) {
+    if(Position.y < 880){
+        Velocity.y = speed;
+        Rotation = 270;
+        currentAnimation = &DownwalkAnimation;
     }
 }
 void MainCharacter::Stop() {

@@ -15,6 +15,8 @@ class MainCharacter : public Engine::Sprite {
         Animation idleAnimation;
         Animation LeftwalkAnimation;
         Animation RightwalkAnimation;
+        Animation UpwalkAnimation;
+        Animation DownwalkAnimation;
         Animation* currentAnimation;
     public:
     MainCharacter(std::string img, Engine::Point position, float speed);
@@ -22,6 +24,8 @@ class MainCharacter : public Engine::Sprite {
     void Draw() const override;
     void MoveLeft(float deltaTime);
     void MoveRight(float deltaTime);
+    void MoveUp(float deltaTime);
+    void MoveDown(float deltaTime);
     void Stop();
 };
 

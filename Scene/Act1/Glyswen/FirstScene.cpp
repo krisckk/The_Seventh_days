@@ -83,6 +83,9 @@ void FirstScene::OnKeyDown(int keyCode){
         case ALLEGRO_KEY_D:
             if(showTextBox > 6) MC -> MoveRight(1.0f / 120.0f); // Assuming 120 fps
             break;
+        case ALLEGRO_KEY_B:
+            Engine::GameEngine::GetInstance().ChangeScene("Backpack");
+            break;
     }
 }
 void FirstScene::OnKeyUp(int keyCode){

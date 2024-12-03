@@ -33,6 +33,13 @@
 [INFO] First Scene initialized
 [INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
 [INFO] Changed to FirstScene scene
+[INFO] stopped audio (bgm)
+[INFO] Backpack Scene initialized
+[INFO] Backpack Scene created
+[INFO] Changed to Backpack scene
+[INFO] First Scene created
+[INFO] First Scene initialized
+[INFO] Changed to FirstScene scene
 [INFO] Game Terminating...
 [INFO] stopped audio (bgm)
 [INFO] Game terminated
