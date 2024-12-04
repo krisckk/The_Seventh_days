@@ -57,7 +57,7 @@ void MainCharacter::Update(float deltaTime) {
     currentAnimation -> Update(deltaTime);
 }
 void MainCharacter::Draw() const {
-    currentAnimation -> Draw(Position.x, Position.y, 3.0f, Rotation);
+    currentAnimation -> Draw(Position.x, Position.y, 1.5f, Rotation);
 }
 void MainCharacter::MoveLeft(float deltaTime) {
     if(Position.x > 0){

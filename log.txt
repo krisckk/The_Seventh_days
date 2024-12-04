@@ -21,7 +21,7 @@
 [INFO] Game initialized
 [INFO] Game start event loop
 [INFO] stopped audio (bgm)
-[INFO] First Scene created
+[INFO] First Scene initialized
 [INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstSceneGIF.jpg
 [INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene1narration.jpg
 [INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene2narration.jpg
@@ -30,18 +30,13 @@
 [INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene5narration.jpg
 [INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/FirstScene6narration.jpg
 [INFO] Loaded Resource<audio>: Resource/audios/MedievalMusic.ogg
-[INFO] First Scene initialized
-[INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
-[INFO] Changed to FirstScene scene
-[INFO] stopped audio (bgm)
-[INFO] Backpack Scene initialized
-[INFO] Backpack Scene created
-[INFO] Changed to Backpack scene
 [INFO] First Scene created
-[INFO] First Scene initialized
 [INFO] Changed to FirstScene scene
+[INFO] VillageToBackery initialized
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/HomeToBackery.jpg scaled to 1600x900
+[INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
+[INFO] Changed to VillageToBackery scene
 [INFO] Game Terminating...
-[INFO] stopped audio (bgm)
 [INFO] Game terminated
 [INFO] Game end
 [INFO] Game Initializing...
