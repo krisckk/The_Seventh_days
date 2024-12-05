@@ -9,11 +9,13 @@
 #include <Engine/LOG.hpp>
 #include <UI/Component/Label.hpp>
 #include "Character/MainCharacter.hpp"
+#include "Character/Althea.hpp"
 #include "Shared/Global.hpp"
 #include "VillageToBackery.hpp"
 
 static ALLEGRO_SAMPLE_ID MedievalBGM;
 MainCharacter* MC;
+Althea* _Althea;
 void VillageToBackery::Initialize() {
     Engine::LOG(Engine::INFO) << "VillageToBackery initialized";
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
@@ -21,12 +23,18 @@ void VillageToBackery::Initialize() {
     int halfW = w / 2;
     int halfH = h / 2;
     AddNewObject(new Engine::Image("Act1/Glyswen/HomeToBackery.jpg", 0, 0, w, h, 0, 0));
-    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(100, 404), 200);
+    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(100, 404), 80);
     if(!MC){
         Engine::LOG(Engine::ERROR) << "Failed to create Main Character";
         return;
     }
     AddNewObject(MC);
+    Althea* _Althea = new Althea("Character/Althea/Altheaidle.png", Engine::Point(1110, 600), 80);
+    if(!_Althea){
+        Engine::LOG(Engine::ERROR) << "Failed to create Althea";
+        return;
+    }
+    AddNewObject(_Althea);
 }
 void VillageToBackery::Draw() const{
     IScene::Draw();
@@ -37,6 +45,7 @@ void VillageToBackery::Draw() const{
 }
 void VillageToBackery::Terminate() {
     MC = nullptr;
+    _Althea = nullptr;
     IScene::Terminate();
 }
 void VillageToBackery::Update(float deltaTime) {
