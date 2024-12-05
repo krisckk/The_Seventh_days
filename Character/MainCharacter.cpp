@@ -76,7 +76,7 @@ void MainCharacter::MoveRight(float deltaTime) {
 void MainCharacter::MoveUp(float deltaTime) {
     if(Position.y > 0){
         Velocity.y = -speed;
-        Rotation = 90;
+        Rotation = 0;
         currentAnimation = &UpwalkAnimation;
     }
 }

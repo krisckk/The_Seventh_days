@@ -24,7 +24,7 @@ class FirstScene final : public Engine::IScene {
         std::shared_ptr <ALLEGRO_BITMAP> FirstScene4narration;
         std::shared_ptr <ALLEGRO_BITMAP> FirstScene5narration;
         std::shared_ptr <ALLEGRO_BITMAP> FirstScene6narration;
-
+        std::shared_ptr <ALLEGRO_BITMAP> FirstScene7narration;
     public:
         FirstScene() = default;
         void Initialize() override;

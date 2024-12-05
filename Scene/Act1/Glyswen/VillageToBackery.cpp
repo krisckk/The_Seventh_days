@@ -13,7 +13,7 @@
 #include "VillageToBackery.hpp"
 
 static ALLEGRO_SAMPLE_ID MedievalBGM;
-extern MainCharacter* MC;
+MainCharacter* MC;
 void VillageToBackery::Initialize() {
     Engine::LOG(Engine::INFO) << "VillageToBackery initialized";
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
@@ -21,7 +21,7 @@ void VillageToBackery::Initialize() {
     int halfW = w / 2;
     int halfH = h / 2;
     AddNewObject(new Engine::Image("Act1/Glyswen/HomeToBackery.jpg", 0, 0, w, h, 0, 0));
-    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(800, 300), 200);
+    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(100, 404), 200);
     if(!MC){
         Engine::LOG(Engine::ERROR) << "Failed to create Main Character";
         return;
@@ -41,6 +41,12 @@ void VillageToBackery::Terminate() {
 }
 void VillageToBackery::Update(float deltaTime) {
     IScene::Update(deltaTime);
+    if(MC -> Position.x < 724.477 && MC -> Position.y < 403.004) MC -> Stop();
+    if(MC -> Position.x > 791.991 && MC -> Position.y < 404) MC -> Stop();
+    if(MC -> Position.x < 721.444 && MC -> Position.y > 448.802) MC -> Stop();
+    if(MC -> Position.x > 796.075 && MC -> Position.y > 446.783 && 
+        !(MC -> Position.x > 775.612 && MC -> Position.y > 567.874 && MC -> Position.x < 1135.42) && !(MC -> Position.x > 775.612 && MC -> Position.x < 1135.42&& MC -> Position.y < 610.533)) MC -> Stop();
+    Engine::LOG(Engine::INFO) << MC->Position.x << " " << MC->Position.y;// print out MC x coordinate and y coordinate
 }
 void VillageToBackery::OnKeyDown(int keyCode) {
     switch(keyCode){
