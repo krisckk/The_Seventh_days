@@ -50,6 +50,12 @@ void VillageToBackery::OnKeyDown(int keyCode) {
         case ALLEGRO_KEY_D:
             MC->MoveRight(1.0f / 120.0f);
             break;
+        case ALLEGRO_KEY_W:
+            MC->MoveUp(1.0f / 120.0f);
+            break;
+        case ALLEGRO_KEY_S:
+            MC->MoveDown(1.0f / 120.0f);
+            break;
         case ALLEGRO_KEY_B:
             Engine::GameEngine::GetInstance().ChangeScene("Backpack");
             break;
@@ -59,6 +65,8 @@ void VillageToBackery::OnKeyUp(int keyCode) {
     switch(keyCode){
         case ALLEGRO_KEY_A:
         case ALLEGRO_KEY_D:
+        case ALLEGRO_KEY_W:
+        case ALLEGRO_KEY_S:
             MC->Stop();
             break;
     }
