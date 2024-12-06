@@ -9,8 +9,10 @@
 #include <Engine/LOG.hpp>
 #include <UI/Component/Label.hpp>
 #include "Character/MainCharacter.hpp"
+#include "Character/Adrian.hpp"
 #include "Shared/Global.hpp"
 #include "Port.hpp"
+Adrian* _Adrian;
 
 void Port::Initialize(){
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
@@ -22,15 +24,23 @@ void Port::Initialize(){
     WoodenBox2 = Engine::Resources::GetInstance().GetBitmap("Act1/Port/WoodenBox2.png");
     WoodenBox3 = Engine::Resources::GetInstance().GetBitmap("Act1/Port/WoodenBox3.png");
     WangHanZunFont = Engine::Resources::GetInstance().GetFont("WangHanZun.ttf", 36);
-    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(100, 404), 80);
+    MC = new MainCharacter("Character/MainCharacter/MCidle.png", Engine::Point(100, 680), 80);
     if(!MC){
         Engine::LOG(Engine::ERROR) << "Failed to create Main Character";
         return;
     }
     AddNewObject(MC);
+    _Adrian = new Adrian("Character/Adrian/Adrianidle.png", Engine::Point(100, 720), 80);
+    if(!_Adrian){
+        Engine::LOG(Engine::ERROR) << "Failed to create Adrian";
+        return;
+    }
+    AddNewObject(_Adrian);
 }
 void Port::Terminate(){
     MC = nullptr;
+    _Adrian = nullptr;
+    IScene::Terminate();
 }
 void Port::Update(float deltaTime){
     IScene::Update(deltaTime);
@@ -42,9 +52,11 @@ void Port::OnKeyDown(int keyCode) {
     switch(keyCode){
         case ALLEGRO_KEY_D:
             MC -> MoveRight(1.0f / 120.0f);
+            _Adrian -> MoveRight(1.0f / 120.0f);
             break;
         case ALLEGRO_KEY_A:
             MC -> MoveLeft(1.0f / 120.0f);
+            _Adrian -> MoveLeft(1.0f / 120.0f);
             break;
     }
 }
@@ -53,6 +65,7 @@ void Port::OnKeyUp(int keyCode) {
         case ALLEGRO_KEY_D:
         case ALLEGRO_KEY_A:
             MC -> Stop();
+            _Adrian -> Stop();
             break;
     }
 }

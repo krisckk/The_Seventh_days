@@ -47,6 +47,7 @@
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox1.png
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox2.png
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox3.png
+[INFO] Loaded Resource<image>: Resource/images/Character/Adrian/Adrianidle.png
 [INFO] Changed to Port scene
 [INFO] Game Terminating...
 [INFO] Game terminated
@@ -56,3 +57,4 @@
 [INFO] There are total 3 supported mouse buttons
 [INFO] Allegro5 initialized
 [INFO] Game begin
+[INFO] Game initialized

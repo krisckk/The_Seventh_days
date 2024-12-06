@@ -6,6 +6,7 @@
 #include <Engine/IScene.hpp>
 #include "Character/MainCharacter.hpp"
 extern MainCharacter* MC;
+extern Adrian* _Adrian;
 class Port final : public Engine::IScene {
     private:
         std::shared_ptr <ALLEGRO_BITMAP> WoodenBox1;

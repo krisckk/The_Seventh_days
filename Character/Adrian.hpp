@@ -1,6 +1,5 @@
-#ifndef MAINCHARACTER_HPP
-#define MAINCHARACTER_HPP
-
+#ifndef ADRIAN_HPP
+#define ADRIAN_HPP
 #include <allegro5/allegro.h>
 #include <string>
 #include <vector>
@@ -9,23 +8,19 @@
 #include <Engine/Point.hpp>
 #include <Engine/Sprite.hpp>
 
-class MainCharacter : public Engine::Sprite {
+class Adrian : public Engine::Sprite {
     protected:
         float speed;
         Animation idleAnimation;
         Animation LeftwalkAnimation;
         Animation RightwalkAnimation;
-        Animation UpwalkAnimation;
-        Animation DownwalkAnimation;
         Animation* currentAnimation;
     public:
-        MainCharacter(std::string img, Engine::Point position, float speed);
+        Adrian(std::string img, Engine::Point position, float speed);
         void Update(float deltaTime) override;
         void Draw() const override;
         void MoveLeft(float deltaTime);
         void MoveRight(float deltaTime);
-        void MoveUp(float deltaTime);
-        void MoveDown(float deltaTime);
         void Stop();
 };
 

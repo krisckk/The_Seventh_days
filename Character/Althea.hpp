@@ -10,7 +10,7 @@
 #include <Engine/Sprite.hpp>
 
 class Althea : public Engine::Sprite {
-    protected:
+    private:
         float speed;
         Animation idleAnimation;
         Animation LeftidleAnimation;
