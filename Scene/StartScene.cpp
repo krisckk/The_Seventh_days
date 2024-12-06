@@ -35,6 +35,7 @@ void StartScene::Initialize() {
     btn = new Engine::ImageButton("StartScene/AchievementButton.png", "StartScene/AchievementButtonHovered.png", 122, 700, 360, 80, 0, 0);
     btn -> SetOnClickCallback(std::bind(&StartScene::AchievementOnClick, this, 1));
     AddNewControlObject(btn);
+
     BGM = AudioHelper::PlayBGM("BeginningReadyFotlt.ogg");
 }
 void StartScene::Terminate() {
@@ -48,7 +49,7 @@ void StartScene::SettingsOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("Settings");
 }
 void StartScene::AchievementOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("achievement");
+    Engine::GameEngine::GetInstance().ChangeScene("VillageToBackery");
 }
 void StartScene::ContinueOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("stage" + std::to_string(stage));

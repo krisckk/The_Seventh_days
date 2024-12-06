@@ -9,6 +9,7 @@ class Global{
         static ALLEGRO_FONT* JetBrainMono;
         static std::string previousScene;
         static std::string currentScene;
+        static bool secondWeek;
 };
 
 #endif // GLOBAL_HPP

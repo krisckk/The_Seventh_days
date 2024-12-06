@@ -3,7 +3,10 @@
 #include <allegro5/allegro_acodec.h>
 
 #include <Engine/GameEngine.hpp>
+#include <Engine/Group.hpp>
+#include <Engine/Resources.hpp>
 #include <Engine/LOG.hpp>
+#include <UI/Component/Image.hpp>
 #include <Shared/Global.hpp>
 #include "Backpack.hpp"
 
@@ -13,6 +16,7 @@ void Backpack::Initialize() {
     int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
     int halfW = w / 2;
     int halfH = h / 2;
+    AddNewObject(new Engine::Image("Backpack/BackpackBackground.png", 0, 0, 1600, 900, 0, 0));
     Engine::LOG(Engine::INFO) << "Backpack Scene created";
 }
 void Backpack::Draw() const{

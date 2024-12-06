@@ -7,12 +7,6 @@
 #include <Engine/IScene.hpp>
 #include "Character/MainCharacter.hpp"
 extern MainCharacter* MC;
-namespace Engine{
-    class Group;
-    class Image;
-    class Label;
-    class Sprite;
-}
 class FirstScene final : public Engine::IScene {
     private:
         int showTextBox = 0;
