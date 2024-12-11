@@ -46,10 +46,10 @@ void StartScene::NewGameOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("FirstScene");
 }
 void StartScene::SettingsOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("Settings");
+    Engine::GameEngine::GetInstance().ChangeScene("VillageToBackery");
 }
 void StartScene::AchievementOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("VillageToBackery");
+    Engine::GameEngine::GetInstance().ChangeScene("Port");
 }
 void StartScene::ContinueOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("stage" + std::to_string(stage));

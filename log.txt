@@ -21,32 +21,12 @@
 [INFO] Game initialized
 [INFO] Game start event loop
 [INFO] stopped audio (bgm)
-[INFO] VillageToBackery initialized
-[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/HomeToBackery.jpg scaled to 1600x900
-[INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
-[INFO] Loaded Resource<image>: Resource/images/Character/Althea/Altheaidle.png
-[INFO] Loaded Resource<font>: Resource/fonts/WangHanZun.ttf with size 30
-[INFO] Changed to VillageToBackery scene
-[INFO] Bakery Scene Initialized
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/Bakery1narration.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/Bakery2narration.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/BakeryFirstChoice.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/BakerySecondChoice.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/BakeryFirstchoiceResult.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/BakerySecondchoiceResult.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Bakery/BakeryImpressionLevelReveal.jpg
-[INFO] Loaded Resource<font>: Resource/fonts/WangHanZun.ttf with size 36
-[INFO] Bakery Scene Created
-[INFO] Changed to Bakery scene
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/PortNarration/PortFirstChoice.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/PortNarration/PortSecondChoice.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/PortNarration/PortFirstchoiceResult.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/PortNarration/PortSecondchoiceResult.jpg
-[INFO] Changed to PortNarration scene
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/HarborBackground.png scaled to 1600x900
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox1.png
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox2.png
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox3.png
+[INFO] Loaded Resource<font>: Resource/fonts/WangHanZun.ttf with size 36
+[INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
 [INFO] Loaded Resource<image>: Resource/images/Character/Adrian/Adrianidle.png
 [INFO] Changed to Port scene
 [INFO] Game Terminating...
@@ -57,4 +37,3 @@
 [INFO] There are total 3 supported mouse buttons
 [INFO] Allegro5 initialized
 [INFO] Game begin
-[INFO] Game initialized
