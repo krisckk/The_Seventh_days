@@ -12,6 +12,7 @@
 #include "Scene/Act1/Glyswen/VillageToBackery.hpp"
 #include "Scene/Act1/Bakery/Bakery.hpp"
 #include "Scene/Act1/Port/PortNarration.hpp"
+#include "Scene/Act1/Port/EmeraldGetNarration.hpp"
 #include "Scene/Act1/Port/Port.hpp"
 
 int main(int argc, char **argv) {
@@ -28,6 +29,7 @@ int main(int argc, char **argv) {
 	game.AddNewScene("Bakery", new Bakery());
 	// Port
 	game.AddNewScene("PortNarration", new PortNarration());
+	game.AddNewScene("EmeraldGetNarration", new EmeraldGetNarration());
 	game.AddNewScene("Port", new Port());
 
 
@@ -42,6 +44,7 @@ int main(int argc, char **argv) {
 	game.Start("Bakery", 120, 1600, 900);
 	// Port
 	game.Start("PortNarration", 120, 1600, 900);
+	game.Start("EmeraldGetNarration", 120, 1600, 900);
 	game.Start("Port", 120, 1600, 900);
 	return 0;
 }

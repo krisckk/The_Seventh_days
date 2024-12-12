@@ -25,10 +25,16 @@
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox1.png
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox2.png
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox3.png
+[INFO] Loaded Resource<image>: Resource/images/Act1/Port/Emerald.png
 [INFO] Loaded Resource<font>: Resource/fonts/WangHanZun.ttf with size 36
 [INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
 [INFO] Loaded Resource<image>: Resource/images/Character/Adrian/Adrianidle.png
 [INFO] Changed to Port scene
+[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/FirstImage.png
+[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/SecondImage.png
+[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/ThirdImage.png
+[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/FourthImage.png
+[INFO] Changed to EmeraldGetNarration scene
 [INFO] Game Terminating...
 [INFO] Game terminated
 [INFO] Game end
