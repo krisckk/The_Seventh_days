@@ -95,6 +95,15 @@ void Port::OnKeyDown(int keyCode) {
             }
             if(EmeraldGet) Engine::GameEngine::GetInstance().ChangeScene("EmeraldGetNarration");
             break;
+        case ALLEGRO_KEY_P:
+            Engine::GameEngine::GetInstance().ChangeScene("PauseScene");
+            break;
+        case ALLEGRO_KEY_B:
+            Engine::GameEngine::GetInstance().ChangeScene("Backpack");
+            break;
+        case ALLEGRO_KEY_M:
+            Engine::GameEngine::GetInstance().ChangeScene("Map");
+            break;
     }
 }
 void Port::OnKeyUp(int keyCode) {

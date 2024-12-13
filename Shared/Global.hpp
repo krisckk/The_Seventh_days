@@ -10,6 +10,8 @@ class Global{
         static std::string previousScene;
         static std::string currentScene;
         static bool secondWeek;
+        static bool emeraldCollected;
+        static int impressionLevel;
 };
 
 #endif // GLOBAL_HPP

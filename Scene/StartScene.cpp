@@ -3,8 +3,11 @@
 #include <memory>
 #include <string>
 #include <fstream>
+#include <sstream>
+#include <sqlite3.h>
 #include "Engine/AudioHelper.hpp"
 #include "Engine/GameEngine.hpp"
+#include "Engine/LOG.hpp"
 #include "Engine/Point.hpp"
 #include "Engine/Resources.hpp"
 #include "UI/Component/Image.hpp"
@@ -12,6 +15,7 @@
 #include "UI/Component/Label.hpp"
 #include "UI/Component/Slider.hpp"
 #include "Scene/StartScene.hpp"
+#include "Shared/Global.hpp"
 static ALLEGRO_SAMPLE_ID BGM;
 void StartScene::Initialize() {
     int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
@@ -46,11 +50,46 @@ void StartScene::NewGameOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("FirstScene");
 }
 void StartScene::SettingsOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("VillageToBackery");
+    Engine::GameEngine::GetInstance().ChangeScene("Settings");
 }
 void StartScene::AchievementOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("Port");
 }
 void StartScene::ContinueOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("stage" + std::to_string(stage));
+    std::ifstream checkFile("the7days_saves.db");
+    if (!checkFile.good()) {
+        Engine::LOG(Engine::INFO) << "No save file found";
+        return;
+    }
+    checkFile.close();
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+
+    // Open database
+    int rc = sqlite3_open("the7days_saves.db", &db);
+    if(rc) {
+        Engine::LOG(Engine::ERROR) << "Can't open database: " << sqlite3_errmsg(db);
+        return;
+    }
+    // Get most recent save
+    const char * query = "SELECT scene_name, emerald_collected, impression_level "
+                            "FROM saves ORDER BY id DESC LIMIT 1";
+    if(sqlite3_prepare_v2(db, query, -1, &stmt, nullptr) == SQLITE_OK) {
+        if(sqlite3_step(stmt) == SQLITE_ROW) {
+            std::string sceneName = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
+            Global::emeraldCollected = sqlite3_column_int(stmt, 1);
+            Global::impressionLevel = sqlite3_column_int(stmt, 2);
+            Engine::LOG(Engine::INFO) << "Game loaded successfully";
+            
+            Engine::GameEngine::GetInstance().ChangeScene(sceneName);
+        }
+        else {
+            Engine::LOG(Engine::ERROR) << "No saved game in database";
+        }
+    }
+    else {
+        Engine::LOG(Engine::ERROR) << "Nothing found" ;
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
 }

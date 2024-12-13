@@ -20,6 +20,7 @@
 [INFO] Loaded Resource<audio>: Resource/audios/BeginningReadyFotlt.ogg
 [INFO] Game initialized
 [INFO] Game start event loop
+[INFO] Game loaded successfully
 [INFO] stopped audio (bgm)
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/HarborBackground.png scaled to 1600x900
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox1.png
@@ -30,11 +31,6 @@
 [INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
 [INFO] Loaded Resource<image>: Resource/images/Character/Adrian/Adrianidle.png
 [INFO] Changed to Port scene
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/FirstImage.png
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/SecondImage.png
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/ThirdImage.png
-[INFO] Loaded Resource<image>: Resource/images/Act1/Port/EmeraldGetNarration/FourthImage.png
-[INFO] Changed to EmeraldGetNarration scene
 [INFO] Game Terminating...
 [INFO] Game terminated
 [INFO] Game end

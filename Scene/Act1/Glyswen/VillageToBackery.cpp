@@ -90,6 +90,9 @@ void VillageToBackery::OnKeyDown(int keyCode) {
         case ALLEGRO_KEY_M:
             Engine::GameEngine::GetInstance().ChangeScene("Map");
             break;
+        case ALLEGRO_KEY_P:
+            Engine::GameEngine::GetInstance().ChangeScene("PauseScene");
+            break;
     }
 }
 void VillageToBackery::OnKeyUp(int keyCode) {

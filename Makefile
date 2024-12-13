@@ -2,12 +2,12 @@
 ifeq ($(OS),Windows_NT)
     ALLEGRO_PATH = C:/allegro
     CXX = g++
-    ALLEGRO_LIBS = -lallegro_monolith
+    ALLEGRO_LIBS = -lallegro_monolith -lsqlite3
     RM = del /Q
     EXE = The7Days.exe
 else
     CXX = clang++
-    ALLEGRO_LIBS = `pkg-config --libs allegro-5 allegro_main-5 allegro_font-5 allegro_dialog-5 allegro_primitives-5 allegro_image-5 allegro_ttf-5 allegro_audio-5 allegro_acodec-5`
+    ALLEGRO_LIBS = `pkg-config --libs allegro-5 allegro_main-5 allegro_font-5 allegro_dialog-5 allegro_primitives-5 allegro_image-5 allegro_ttf-5 allegro_audio-5 allegro_acodec-5` -lsqlite3
     RM = rm -f
     EXE = The7Days
 endif

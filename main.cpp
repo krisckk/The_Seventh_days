@@ -7,6 +7,7 @@
 #include "Character/Backpack.hpp"
 #include "Scene/StartScene.hpp"
 #include "Scene/Settings.hpp"
+#include "Scene/PauseScene.hpp"
 #include "Scene/Map.hpp"
 #include "Scene/Act1/Glyswen/FirstScene.hpp"
 #include "Scene/Act1/Glyswen/VillageToBackery.hpp"
@@ -19,6 +20,7 @@ int main(int argc, char **argv) {
 	Engine::LOG::SetConfig(true);
 	Engine::GameEngine& game = Engine::GameEngine::GetInstance();
 	game.AddNewScene("StartScene", new StartScene());
+	game.AddNewScene("PauseScene", new PauseScene());
 	game.AddNewScene("Settings", new Settings());
 	game.AddNewScene("Backpack", new Backpack());
 	game.AddNewScene("Map", new Map());
@@ -34,6 +36,7 @@ int main(int argc, char **argv) {
 
 
 	game.Start("StartScene", 120, 1600, 900);
+	game.Start("PauseScene", 120, 1600, 900);
 	game.Start("Settings", 120, 1600, 900);
 	game.Start("Backpack", 120, 1600, 900);
 	game.Start("Map", 120, 1600, 900);
