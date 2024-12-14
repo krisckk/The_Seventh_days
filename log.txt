@@ -20,7 +20,6 @@
 [INFO] Loaded Resource<audio>: Resource/audios/BeginningReadyFotlt.ogg
 [INFO] Game initialized
 [INFO] Game start event loop
-[INFO] Game loaded successfully
 [INFO] stopped audio (bgm)
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/HarborBackground.png scaled to 1600x900
 [INFO] Loaded Resource<image>: Resource/images/Act1/Port/WoodenBox1.png
@@ -31,6 +30,37 @@
 [INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
 [INFO] Loaded Resource<image>: Resource/images/Character/Adrian/Adrianidle.png
 [INFO] Changed to Port scene
+[INFO] Map initialized
+[INFO] Loaded Resource<image>: Resource/images/Map/Map.png scaled to 1600x900
+[INFO] Loaded Resource<image>: Resource/images/Map/MapTown.png scaled to 245x214
+[INFO] Loaded Resource<image>: Resource/images/Map/MapTown.png
+[INFO] Loaded Resource<image>: Resource/images/Map/MapTownHovered.png
+[INFO] Loaded Resource<image>: Resource/images/Map/Port.png scaled to 248x150
+[INFO] Loaded Resource<image>: Resource/images/Map/Port.png
+[INFO] Loaded Resource<image>: Resource/images/Map/PortHovered.png
+[INFO] Loaded Resource<image>: Resource/images/Map/MushroomFarm.png scaled to 300x158
+[INFO] Loaded Resource<image>: Resource/images/Map/MushroomFarm.png
+[INFO] Loaded Resource<image>: Resource/images/Map/MushroomFarmHovered.png
+[INFO] Loaded Resource<image>: Resource/images/Map/Hideaway.png scaled to 153x66
+[INFO] Loaded Resource<image>: Resource/images/Map/Hideaway.png
+[INFO] Loaded Resource<image>: Resource/images/Map/HideawayHovered.png
+[INFO] Loaded Resource<image>: Resource/images/Map/Laboratory.png scaled to 210x44
+[INFO] Loaded Resource<image>: Resource/images/Map/Laboratory.png
+[INFO] Loaded Resource<image>: Resource/images/Map/LaboratoryHovered.png
+[INFO] Map created
+[INFO] Changed to Map scene
+[INFO] VillageToBackery initialized
+[INFO] Loaded Resource<image>: Resource/images/Act1/Glyswen/HomeToBackery.jpg scaled to 1600x900
+[INFO] Loaded Resource<image>: Resource/images/Character/Althea/Altheaidle.png
+[INFO] Loaded Resource<font>: Resource/fonts/WangHanZun.ttf with size 30
+[INFO] Changed to VillageToBackery scene
+[INFO] Map initialized
+[INFO] Map created
+[INFO] Changed to Map scene
+[INFO] Changed to Port scene
+[INFO] Map initialized
+[INFO] Map created
+[INFO] Changed to Map scene
 [INFO] Game Terminating...
 [INFO] Game terminated
 [INFO] Game end

@@ -15,6 +15,8 @@
 #include "Scene/Act1/Port/PortNarration.hpp"
 #include "Scene/Act1/Port/EmeraldGetNarration.hpp"
 #include "Scene/Act1/Port/Port.hpp"
+#include "Scene/Act1/MushroomFarm/FirstNarration.hpp"
+#include "Scene/Act1/MushroomFarm/SecondNarration.hpp"
 
 int main(int argc, char **argv) {
 	Engine::LOG::SetConfig(true);
@@ -33,6 +35,9 @@ int main(int argc, char **argv) {
 	game.AddNewScene("PortNarration", new PortNarration());
 	game.AddNewScene("EmeraldGetNarration", new EmeraldGetNarration());
 	game.AddNewScene("Port", new Port());
+	// MushroomFarm
+	game.AddNewScene("FirstNarration", new FirstNarration());
+	game.AddNewScene("SecondNarration", new SecondNarration());
 
 
 	game.Start("StartScene", 120, 1600, 900);
@@ -49,5 +54,8 @@ int main(int argc, char **argv) {
 	game.Start("PortNarration", 120, 1600, 900);
 	game.Start("EmeraldGetNarration", 120, 1600, 900);
 	game.Start("Port", 120, 1600, 900);
+	// MushroomFarm
+	game.Start("FirstNarration", 120, 1600, 900);
+	game.Start("SecondNarration", 120, 1600, 900);
 	return 0;
 }
