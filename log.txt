@@ -21,27 +21,15 @@
 [INFO] Game initialized
 [INFO] Game start event loop
 [INFO] stopped audio (bgm)
-[INFO] Loaded Resource<image>: Resource/images/Act1/MushroomFarm/MushroomFarm.jpg scaled to 1600x900
-[INFO] Loaded Resource<image>: Resource/images/Act1/MushroomFarm/RedMushroom.png
-[INFO] Loaded Resource<image>: Resource/images/Act1/MushroomFarm/WhiteMushroom.png
-[INFO] Loaded Resource<font>: Resource/fonts/WangHanZun.ttf with size 36
+[INFO] Loaded Resource<image>: Resource/images/Act2/Tuesday/Bakery/TuesdayBakery.jpg scaled to 1600x900
+[INFO] Loaded Resource<image>: Resource/images/Act2/Tuesday/Bakery/Notebook.png
 [INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
-[INFO] Changed to MushroomFarm scene
-[INFO] Loaded Resource<image>: Resource/images/Act1/MushroomFarm/Narration/SixthNarration.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/MushroomFarm/Narration/SeventhNarration.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/MushroomFarm/Narration/EighthNarration.jpg
-[INFO] Changed to MushroomFarmSecondNarration scene
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/FirstImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/SecondImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/ThirdImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/FourthImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/FifthImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/SixthImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/SeventhImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/EighthImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/NinethImage.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/Firstchoice.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/SecondChoice.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/FirstchoiceResult.jpg
-[INFO] Loaded Resource<image>: Resource/images/Act1/Saturday/Bakery/SecondchoiceResult.jpg
-[INFO] Changed to BakeryNarration scene
+[INFO] Changed to TuesdayBakery scene
+[INFO] Game Terminating...
+[INFO] Game terminated
+[INFO] Game end
+[INFO] Game Initializing...
+[INFO] Loaded window icon from: icon.png
+[INFO] There are total 3 supported mouse buttons
+[INFO] Allegro5 initialized
+[INFO] Game begin

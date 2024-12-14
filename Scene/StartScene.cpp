@@ -53,7 +53,7 @@ void StartScene::SettingsOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("Settings");
 }
 void StartScene::AchievementOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("MushroomFarm");
+    Engine::GameEngine::GetInstance().ChangeScene("TuesdayBakery");
 }
 void StartScene::ContinueOnClick(int stage) {
     std::ifstream checkFile("the7days_saves.db");

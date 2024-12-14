@@ -19,6 +19,11 @@
 #include "Scene/Act1/MushroomFarm/SecondNarration.hpp"
 #include "Scene/Act1/MushroomFarm/MushroomFarm.hpp"
 #include "Scene/Act1/Saturday/BakeryNarration.hpp"
+#include "Scene/Act1/Saturday/HideawayNarration.hpp"
+#include "Scene/Act1/Sunday/FirstSundayNarration.hpp"
+#include "Scene/Act2/Monday/Act2MondayNarration.hpp"
+#include "Scene/Act2/Tuesday/Act2TuesdayFirstNarration.hpp"
+#include "Scene/Act2/Tuesday/TuesdayBakery.hpp"
 
 int main(int argc, char **argv) {
 	Engine::LOG::SetConfig(true);
@@ -28,6 +33,7 @@ int main(int argc, char **argv) {
 	game.AddNewScene("Settings", new Settings());
 	game.AddNewScene("Backpack", new Backpack());
 	game.AddNewScene("Map", new Map());
+	// Act 1
 	// Glyswen
 	game.AddNewScene("FirstScene", new FirstScene());
 	game.AddNewScene("VillageToBackery", new VillageToBackery());
@@ -43,12 +49,23 @@ int main(int argc, char **argv) {
 	game.AddNewScene("MushroomFarm", new MushroomFarm());
 	// Saturday
 	game.AddNewScene("BakeryNarration", new BakeryNarration());
+	game.AddNewScene("HideawayNarration", new HideawayNarration());
+	// Sunday
+	game.AddNewScene("FirstSundayNarration", new FirstSundayNarration());
+	// Act 2
+	// Monday
+	game.AddNewScene("Act2MondayNarration", new Act2MondayNarration());
+	// Tuesday
+	game.AddNewScene("Act2TuesdayFirstNarration", new Act2TuesdayFirstNarration());
+	game.AddNewScene("TuesdayBakery", new TuesdayBakery());
+	
 
 	game.Start("StartScene", 120, 1600, 900);
 	game.Start("PauseScene", 120, 1600, 900);
 	game.Start("Settings", 120, 1600, 900);
 	game.Start("Backpack", 120, 1600, 900);
 	game.Start("Map", 120, 1600, 900);
+	// Act 1
 	// Glyswen
 	game.Start("FirstScene", 120, 1600, 900);
 	game.Start("VillageToBackery", 120, 1600, 900);
@@ -64,5 +81,14 @@ int main(int argc, char **argv) {
 	game.Start("MushroomFarm", 120, 1600, 900);
 	// Saturday
 	game.Start("BakeryNarration", 120, 1600, 900);
+	game.Start("HideawayNarration", 120, 1600, 900);
+	// Sunday
+	game.Start("FirstSundayNarration", 120, 1600, 900);
+	// Act 2
+	// Monday
+	game.Start("Act2MondayNarration", 120, 1600, 900);
+	// Tuesday
+	game.Start("Act2TuesdayFirstNarration", 120, 1600, 900);
+	game.Start("TuesdayBakery", 120, 1600, 900);
 	return 0;
 }
