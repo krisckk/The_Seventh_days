@@ -17,6 +17,8 @@
 #include "Scene/Act1/Port/Port.hpp"
 #include "Scene/Act1/MushroomFarm/FirstNarration.hpp"
 #include "Scene/Act1/MushroomFarm/SecondNarration.hpp"
+#include "Scene/Act1/MushroomFarm/MushroomFarm.hpp"
+#include "Scene/Act1/Saturday/BakeryNarration.hpp"
 
 int main(int argc, char **argv) {
 	Engine::LOG::SetConfig(true);
@@ -36,9 +38,11 @@ int main(int argc, char **argv) {
 	game.AddNewScene("EmeraldGetNarration", new EmeraldGetNarration());
 	game.AddNewScene("Port", new Port());
 	// MushroomFarm
-	game.AddNewScene("FirstNarration", new FirstNarration());
-	game.AddNewScene("SecondNarration", new SecondNarration());
-
+	game.AddNewScene("MushroomFarmFirstNarration", new MushroomFarmFirstNarration());
+	game.AddNewScene("MushroomFarmSecondNarration", new MushroomFarmSecondNarration());
+	game.AddNewScene("MushroomFarm", new MushroomFarm());
+	// Saturday
+	game.AddNewScene("BakeryNarration", new BakeryNarration());
 
 	game.Start("StartScene", 120, 1600, 900);
 	game.Start("PauseScene", 120, 1600, 900);
@@ -55,7 +59,10 @@ int main(int argc, char **argv) {
 	game.Start("EmeraldGetNarration", 120, 1600, 900);
 	game.Start("Port", 120, 1600, 900);
 	// MushroomFarm
-	game.Start("FirstNarration", 120, 1600, 900);
-	game.Start("SecondNarration", 120, 1600, 900);
+	game.Start("MushroomFarmFirstNarration", 120, 1600, 900);
+	game.Start("MushroomFarmSecondNarration", 120, 1600, 900);
+	game.Start("MushroomFarm", 120, 1600, 900);
+	// Saturday
+	game.Start("BakeryNarration", 120, 1600, 900);
 	return 0;
 }

@@ -7,3 +7,7 @@ std::string Global::currentScene = "";
 bool Global::secondWeek = false;
 bool Global::emeraldCollected = false;
 int Global::impressionLevel = 0;
+int Global::Width = 1600;
+int Global::Height = 900;
+bool Global::GiveEmeraldToAlthea = false;
+bool Global::TellMoira = false;

@@ -1,7 +1,7 @@
 # Detect OS
 ifeq ($(OS),Windows_NT)
     ALLEGRO_PATH = C:/allegro
-    CXX = g++
+    CXX = clang++
     ALLEGRO_LIBS = -lallegro_monolith -lsqlite3
     RM = del /Q
     EXE = The7Days.exe
@@ -16,8 +16,7 @@ endif
 CXXFLAGS = -std=c++14 -I. -IEngine -IResource
 
 # Source files
-SOURCES = $(wildcard Engine/*.cpp) $(wildcard UI/Component/*.cpp) $(wildcard Scene/*.cpp) $(wildcard Scene/Act1/Glyswen/*.cpp) $(wildcard Scene/Act1/Bakery/*.cpp) $(wildcard Scene/Act1/Port/*.cpp)
-$(wildcard Scene/Act1/MushroomFarm/*.cpp) $(wildcard Shared/*.cpp) $(wildcard Character/*.cpp) main.cpp
+SOURCES = $(wildcard Engine/*.cpp) $(wildcard UI/Component/*.cpp) $(wildcard Scene/*.cpp) $(wildcard Scene/Act1/Glyswen/*.cpp) $(wildcard Scene/Act1/Bakery/*.cpp) $(wildcard Scene/Act1/Port/*.cpp) $(wildcard Scene/Act1/MushroomFarm/*.cpp) $(wildcard Scene/Act1/Saturday/*.cpp) $(wildcard Shared/*.cpp) $(wildcard Character/*.cpp) main.cpp
 
 # Object files
 OBJECTS = $(SOURCES:.cpp=.o)

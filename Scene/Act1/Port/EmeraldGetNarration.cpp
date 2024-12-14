@@ -48,7 +48,8 @@ void EmeraldGetNarration::OnKeyDown(int keyCode) {
     switch (keyCode)
     {
         case ALLEGRO_KEY_C:
-            showTextBox++;
+            if(showTextBox == 3) Engine::GameEngine::GetInstance().ChangeScene("MushroomFarmFirstNarration");
+            else showTextBox++;
             break;
     }
 }

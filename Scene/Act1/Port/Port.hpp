@@ -27,7 +27,6 @@ class Port final : public Engine::IScene {
         void Draw() const override;
         void Update(float deltaTime) override;
         void UpdateTextBox(float deltaTime);
-        void UpdateEmerald(float deltaTime);
         void OnKeyDown(int keyCode) override;
         void OnKeyUp(int keyCode) override;
         std::string GetName() const override { return "Port"; };

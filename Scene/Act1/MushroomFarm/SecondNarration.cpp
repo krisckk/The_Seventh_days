@@ -53,7 +53,7 @@ void MushroomFarmSecondNarration::OnKeyDown(int keyCode){
                 showTextBox = 2;
             }
             else if(showTextBox == 2){
-                Engine::GameEngine::GetInstance().ChangeScene("PortNarration");
+                Engine::GameEngine::GetInstance().ChangeScene("BakeryNarration");
             }
             break;
     }

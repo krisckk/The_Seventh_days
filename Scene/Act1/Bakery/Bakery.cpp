@@ -47,9 +47,11 @@ void Bakery::Draw() const {
     if(showTextBox == 5){
         if(choiceNumber == 3) {
             al_draw_text(WangHanZunFont.get(), al_map_rgb(255, 255, 255), halfW - 100, h - 150, 0, "好感度加 1");
+            Global::impressionLevel++;
         }
         else if(choiceNumber == 4) {
             al_draw_text(WangHanZunFont.get(), al_map_rgb(255, 255, 255), halfW - 100, h - 150, 0, "好感度加 2");
+            Global::impressionLevel += 2;
         }
     }
     

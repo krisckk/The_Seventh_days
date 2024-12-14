@@ -20,6 +20,7 @@ class MushroomFarmFirstNarration final : public Engine::IScene {
         void Initialize() override;
         void Terminate() override;
         void Update(float deltaTime) override;
+        void OnKeyDown(int keyCode) override;
         void Draw() const override;
         std::string GetName() const override { return "MushroomFarmFirstNarration"; }
 };
