@@ -34,7 +34,7 @@ void Ending::Initialize(){
         SeventhImage = Engine::Resources::GetInstance().GetBitmap("Ending/1-2/FourthImage.jpg");
         EighthImage = Engine::Resources::GetInstance().GetBitmap("Ending/1-2/FourthImage.jpg");
     }
-    else if(Global::GiveEmeraldToAlthea && !Global::TellMoira && !Global::GroupPhotoGet){
+    else if(Global::TellMoira && !Global::GroupPhotoGet){
         Global::endingType = "2.1";
         FirstImage = Engine::Resources::GetInstance().GetBitmap("Ending/2-1/FirstImage.jpg");
         SecondImage = Engine::Resources::GetInstance().GetBitmap("Ending/2-1/SecondImage.jpg");
@@ -45,7 +45,7 @@ void Ending::Initialize(){
         SeventhImage = Engine::Resources::GetInstance().GetBitmap("Ending/2-1/SixthImage.jpg");
         EighthImage = Engine::Resources::GetInstance().GetBitmap("Ending/2-1/SixthImage.jpg");
     }
-    else if(!Global::GiveEmeraldToAlthea && !Global::TellMoira && !Global::GroupPhotoGet){
+    else if(!Global::TellMoira && !Global::GroupPhotoGet){
         Global::endingType = "2.2";
         FirstImage = Engine::Resources::GetInstance().GetBitmap("Ending/2-2/FirstImage.jpg");
         SecondImage = Engine::Resources::GetInstance().GetBitmap("Ending/2-2/SecondImage.jpg");
