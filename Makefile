@@ -16,7 +16,7 @@ endif
 CXXFLAGS = -std=c++14 -I. -IEngine -IResource
 
 # Source files
-SOURCES = $(wildcard Engine/*.cpp) $(wildcard UI/Component/*.cpp) $(wildcard Scene/*.cpp) $(wildcard Scene/Act1/Glyswen/*.cpp) $(wildcard Scene/Act1/Bakery/*.cpp) $(wildcard Scene/Act1/Port/*.cpp) $(wildcard Scene/Act1/MushroomFarm/*.cpp) $(wildcard Scene/Act1/Saturday/*.cpp) $(wildcard Scene/Act1/Sunday/*.cpp) $(wildcard Scene/Act2/Monday/*.cpp) $(wildcard Scene/Act2/Tuesday/*.cpp) $(wildcard Shared/*.cpp) $(wildcard Character/*.cpp) main.cpp
+SOURCES = $(wildcard Engine/*.cpp) $(wildcard UI/Component/*.cpp) $(wildcard Scene/*.cpp) $(wildcard Scene/Act1/Glyswen/*.cpp) $(wildcard Scene/Act1/Bakery/*.cpp) $(wildcard Scene/Act1/Port/*.cpp) $(wildcard Scene/Act1/MushroomFarm/*.cpp) $(wildcard Scene/Act1/Saturday/*.cpp) $(wildcard Scene/Act1/Sunday/*.cpp) $(wildcard Scene/Act2/Monday/*.cpp) $(wildcard Scene/Act2/Tuesday/*.cpp) $(wildcard Scene/Act2/Wednesday/*.cpp) $(wildcard Scene/Act2/Thursday/*.cpp) $(wildcard Scene/Act2/Friday/*.cpp) $(wildcard Scene/Act2/Saturday/*.cpp) $(wildcard Scene/Ending/*.cpp) $(wildcard Shared/*.cpp) $(wildcard Character/*.cpp) main.cpp
 
 # Object files
 OBJECTS = $(SOURCES:.cpp=.o)

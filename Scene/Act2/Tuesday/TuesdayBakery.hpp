@@ -12,6 +12,7 @@ class TuesdayBakery final : public Engine::IScene {
     private:
         std::shared_ptr <ALLEGRO_BITMAP> TuesdayBakeryBackground;
         std::shared_ptr <ALLEGRO_BITMAP> Notebook;
+        std::shared_ptr <ALLEGRO_FONT> WangHanZunFont;
         bool NotebookGet;
     public:
         explicit TuesdayBakery() = default;

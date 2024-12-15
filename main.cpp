@@ -8,6 +8,7 @@
 #include "Scene/StartScene.hpp"
 #include "Scene/Settings.hpp"
 #include "Scene/PauseScene.hpp"
+#include "Scene/Achievement.hpp"
 #include "Scene/Map.hpp"
 #include "Scene/Act1/Glyswen/FirstScene.hpp"
 #include "Scene/Act1/Glyswen/VillageToBackery.hpp"
@@ -24,12 +25,19 @@
 #include "Scene/Act2/Monday/Act2MondayNarration.hpp"
 #include "Scene/Act2/Tuesday/Act2TuesdayFirstNarration.hpp"
 #include "Scene/Act2/Tuesday/TuesdayBakery.hpp"
+#include "Scene/Act2/Tuesday/Act2TuesdaySecondNarration.hpp"
+#include "Scene/Act2/Wednesday/Act2WednesdayNarration.hpp"
+#include "Scene/Act2/Thursday/Act2ThursdayNarration.hpp"
+#include "Scene/Act2/Friday/Act2FridayNarration.hpp"
+#include "Scene/Act2/Saturday/Act2SaturdayNarration.hpp"
+#include "Scene/Ending/Ending.hpp"
 
 int main(int argc, char **argv) {
 	Engine::LOG::SetConfig(true);
 	Engine::GameEngine& game = Engine::GameEngine::GetInstance();
 	game.AddNewScene("StartScene", new StartScene());
 	game.AddNewScene("PauseScene", new PauseScene());
+	game.AddNewScene("Achievement", new Achievement());
 	game.AddNewScene("Settings", new Settings());
 	game.AddNewScene("Backpack", new Backpack());
 	game.AddNewScene("Map", new Map());
@@ -58,10 +66,21 @@ int main(int argc, char **argv) {
 	// Tuesday
 	game.AddNewScene("Act2TuesdayFirstNarration", new Act2TuesdayFirstNarration());
 	game.AddNewScene("TuesdayBakery", new TuesdayBakery());
-	
+	game.AddNewScene("Act2TuesdaySecondNarration", new Act2TuesdaySecondNarration());
+	// Wednesday
+	game.AddNewScene("Act2WednesdayNarration", new Act2WednesdayNarration());
+	// Thursday
+	game.AddNewScene("Act2ThursdayNarration", new Act2ThursdayNarration());
+	// Friday
+	game.AddNewScene("Act2FridayNarration", new Act2FridayNarration());
+	// Saturday
+	game.AddNewScene("Act2SaturdayNarration", new Act2SaturdayNarration());
+	// Ending
+	game.AddNewScene("Ending", new Ending());
 
 	game.Start("StartScene", 120, 1600, 900);
 	game.Start("PauseScene", 120, 1600, 900);
+	game.Start("Achievement", 120, 1600, 900);
 	game.Start("Settings", 120, 1600, 900);
 	game.Start("Backpack", 120, 1600, 900);
 	game.Start("Map", 120, 1600, 900);
@@ -90,5 +109,16 @@ int main(int argc, char **argv) {
 	// Tuesday
 	game.Start("Act2TuesdayFirstNarration", 120, 1600, 900);
 	game.Start("TuesdayBakery", 120, 1600, 900);
+	game.Start("Act2TuesdaySecondNarration", 120, 1600, 900);
+	// Wednesday
+	game.Start("Act2WednesdayNarration", 120, 1600, 900);
+	// Thursday
+	game.Start("Act2ThursdayNarration", 120, 1600, 900);
+	// Friday
+	game.Start("Act2FridayNarration", 120, 1600, 900);
+	// Saturday
+	game.Start("Act2SaturdayNarration", 120, 1600, 900);
+	// Ending
+	game.Start("Ending", 120, 1600, 900);
 	return 0;
 }

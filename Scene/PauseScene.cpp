@@ -78,6 +78,7 @@ void PauseScene::SaveGameToDatabase() {
                             "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                             "scene_name TEXT NOT NULL,"
                             "emerald_collected INTEGER,"
+                            "NotebookGet INTEGER,"
                             "impression_level INTEGER)"; // "save_date DATETIME DEFAULT CURRENT_TIMESTAMP);"
     rc = sqlite3_exec(db, createTable, 0, 0, &errMsg);
 
@@ -90,8 +91,9 @@ void PauseScene::SaveGameToDatabase() {
 
     // Prepare save data
     std::stringstream saveQuery;
-    saveQuery  << "INSERT INTO saves (scene_name, emerald_collected, impression_level) VALUES ('"
+    saveQuery  << "INSERT INTO saves (scene_name, emerald_collected, NotebokkGet, impression_level) VALUES ('"
                << Global::previousScene << "', "
+               << (Global::NotebookGet ? 1 : 0) << ", "
                << (Global::emeraldCollected ? 1 : 0) << ", "
                << Global::impressionLevel << ")";
     // Execute save

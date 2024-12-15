@@ -53,7 +53,7 @@ void StartScene::SettingsOnClick(int stage) {
     Engine::GameEngine::GetInstance().ChangeScene("Settings");
 }
 void StartScene::AchievementOnClick(int stage) {
-    Engine::GameEngine::GetInstance().ChangeScene("TuesdayBakery");
+    Engine::GameEngine::GetInstance().ChangeScene("Achievement");
 }
 void StartScene::ContinueOnClick(int stage) {
     std::ifstream checkFile("the7days_saves.db");
@@ -72,13 +72,14 @@ void StartScene::ContinueOnClick(int stage) {
         return;
     }
     // Get most recent save
-    const char * query = "SELECT scene_name, emerald_collected, impression_level "
+    const char * query = "SELECT scene_name, emerald_collected, NotebookGet, impression_level "
                             "FROM saves ORDER BY id DESC LIMIT 1";
     if(sqlite3_prepare_v2(db, query, -1, &stmt, nullptr) == SQLITE_OK) {
         if(sqlite3_step(stmt) == SQLITE_ROW) {
             std::string sceneName = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
             Global::emeraldCollected = sqlite3_column_int(stmt, 1);
-            Global::impressionLevel = sqlite3_column_int(stmt, 2);
+            Global::NotebookGet = sqlite3_column_int(stmt, 2);
+            Global::impressionLevel = sqlite3_column_int(stmt, 3);
             Engine::LOG(Engine::INFO) << "Game loaded successfully";
             
             Engine::GameEngine::GetInstance().ChangeScene(sceneName);

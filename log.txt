@@ -21,11 +21,17 @@
 [INFO] Game initialized
 [INFO] Game start event loop
 [INFO] stopped audio (bgm)
-[INFO] Loaded Resource<image>: Resource/images/Act2/Tuesday/Bakery/TuesdayBakery.jpg scaled to 1600x900
-[INFO] Loaded Resource<image>: Resource/images/Act2/Tuesday/Bakery/Notebook.png
-[INFO] Loaded Resource<image>: Resource/images/Character/MainCharacter/MCidle.png
-[INFO] Changed to TuesdayBakery scene
+[INFO] Loaded Resource<font>: Resource/fonts/JetBrainsMono.ttf with size 36
+[INFO] Loaded Resource<image>: Resource/images/Achievement/0.jpg
+[INFO] Loaded Resource<image>: Resource/images/Achievement/1_1.jpg
+[INFO] Loaded Resource<image>: Resource/images/Achievement/1_2.jpg
+[INFO] Loaded Resource<image>: Resource/images/Achievement/2_1.jpg
+[INFO] Loaded Resource<image>: Resource/images/Achievement/2_2.jpg
+[INFO] Loaded Resource<image>: Resource/images/Achievement/3.jpg
+[INFO] Changed to Achievement scene
+[INFO] Changed to StartScene scene
 [INFO] Game Terminating...
+[INFO] stopped audio (bgm)
 [INFO] Game terminated
 [INFO] Game end
 [INFO] Game Initializing...
